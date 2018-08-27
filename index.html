@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="The Solid Rock Cafe is a facility to break people free from their addictions and place their trust in God, fraserburgh, recovery, United Kingdom, drugs, alcohol, suppport" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+
+<title>Solid Rock Cafe Fraserburgh</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+<script type="text/javascript">
+
+	var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "img/meeting.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "img/smile.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "img/fullhouse.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "img/assembly.jpg"
+
+</script>
+
+<link rel="shortcut icon" href="logo.ico"/>
+
+</head>
+
+<body>
+<div id="wrapper">
+	
+    <div id="header">
+<img src="img/logo.png" alt="" height="100" width="100" class="logo"/>
+<nav>
+
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="stories.html">Stories/Events</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		<li><a href="contact.php">Contact</a></li>
+	</ul>
+	
+	<div class="handle"><img src="img/nav-icon.png" alt="" class="nav" title="main menu"/></div>
+	
+	</nav>
+</div>
+<script>
+
+$('.handle').on('click', function(){
+	$('nav ul').toggleClass('showing');
+})
+</script>
+       
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <div class="picture">
+      <img src="img/meeting.jpg" alt="" class="image" id="image"/>
+ </div>
+ 
+ <script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('image').src = slideimages[step].src
+ if (step<3)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+</script>
+ 
+ <div class="content">
+ 	<h1>WELCOME</h1><br>
+ 	<p>welcome to the official solid rock cafe website
+the place where everyone deserves a second chance
+and to break free of horrible addictions and to 
+be closer to god.</p>
+ </div>
+ 
+     <div class="picture">
+      <img src="img/meeting1.jpg" alt="" class="image"/>
+ </div>
+ 
+  <div class="content">
+ 	<h1>WHAT WE DO</h1><br>
+ 	<p>What we do is that we speak to our clients who have suffered from
+various addictions such as alcohol, drugs, depression and need a little
+more support with their family.</p>
+ </div>
+ 
+      <div class="picture">
+      <img src="img/team.jpg" alt="" class="image"/>
+ </div>
+ 
+ <div class="content">
+ <h1>DROP IN SESSIONS</h1><br>
+ <p>Our drop ins happen on Tuesday, Thursday and Friday afternoons. Every now and then we have a meeting on Sunday evenings we call Street Church, which involves a meal and someone sharing their story of recovery. We do a Christmas meal every year for our service users and give them a food parcel for over the festive period.</p>
+</div>
+ 
+<div id="body">
+
+			<div id="left">
+				<h2>ABOUT US</h2>
+                
+              
+              <p>Learn more about how the Solid Rock Cafe came to be and how we have helped people over the years<br/>
+                </p>
+                <br>
+                
+                
+                <a href="about.html"><img src="img/button.png" alt="" class="button"/></a>
+                
+			</div>
+
+			<div id="center">
+           
+				<h2>STORIES/EVENTS</h2>
+                
+                
+                
+              <p>Want to know how people managed to break free of their addictions and seeong how they are doing or on any events that we have had recentlty<br/>
+               </p>
+               <br>
+               
+               
+               
+                
+                <a href="stories.html"><img src="img/button.png" alt="" class="button"/></a>
+               
+			</div>
+
+			<div id="right">
+				<h2>CONTACT US</h2>
+                
+                
+              <p>Want to get in contact with the manager or want to visit our facility but do not know where?<br/>
+                </p>
+                
+                <a href="contact.php"><img src="img/button.png" alt="" class="button"/></a>
+                <br>
+                
+			</div>
+
+</div>
+<div id="scroll">
+                  <a href="#wrapper">  <img src="img/arrow-144-256.png" alt="scroll up" height="50" width="50" class="scroll" title="back to the top"/></a>
+</div>
+        
+<div class="footer"><br/>
+   <p>&copy; Solid Rock Cafe 2016<br/>
+  	24 Broad St, Fraserburgh AB43 9AE<br/>
+	01346 515608<br/>
+    dolly.solidrock@gmail.com
+    
+  </p>
+  <br/>
+  	 <a href="https://www.facebook.com/Solid-Rock-Cafe-196297310432598/?fref=ts"><img src="img/facebook-2-256.fw.png" alt="" height="40" width="40" class="facebook" title="visit our facebook page."/></a>
+
+
+
+
+</div>
+</div>
+</body>
+</html>
